@@ -1,9 +1,16 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+   <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+      <b-nav-item to="/">Home</b-nav-item> |
+      <b-nav-item to="/about">MiembrosVue</b-nav-item> |
+      <b-nav-item to="/about2">MiembrosLaravel</b-nav-item> |
+       <b-nav-item to="/lenguaje">crudLenguaje</b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+   </b-navbar>
     <router-view/>
   </div>
 </template>
